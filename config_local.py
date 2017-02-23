@@ -53,7 +53,7 @@ DEFAULT_SERVER = '0.0.0.0'
 
 # The default port on which the app server will listen if not set in the
 # environment by the runtime
-DEFAULT_SERVER_PORT = 80
+DEFAULT_SERVER_PORT = 5999
 
 # Should HTML be minified on the fly when not in debug mode?
 MINIFY_HTML = True
@@ -81,6 +81,6 @@ UPGRADE_CHECK_ENABLED = False
 UPGRADE_CHECK_URL = 'https://www.pgadmin.org/versions.json'
 
 DATA_DIR = '/data'
-SQLITE_PATH = '/data/pgadmin4.db'
+SQLITE_PATH = '/data/config/pgadmin4.db'
 SESSION_DB_PATH = '/data/sessions'
 STORAGE_DIR = '/data/storage'

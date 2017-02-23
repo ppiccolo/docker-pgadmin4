@@ -1,6 +1,6 @@
 
 build:
-	docker build -t foxylion/pgadmin4 .
+	docker build -t ppiccolo/pgadmin4 .
 
 run:
-	docker run --rm -it -p 5433:80 -v `pwd`/.pgadmin4:/data foxylion/pgadmin4
+	docker run --rm -it -p 5999:5999 -v `pwd`/.pgadmin4:/data ppiccolo/pgadmin4
