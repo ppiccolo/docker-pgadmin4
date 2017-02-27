@@ -14,6 +14,7 @@ RUN apk add --no-cache alpine-sdk postgresql postgresql-dev \
  chown -R 1000:50 /data
 
 ENV SERVER_MODE   false
+ENV SERVER_PORT   5999
 ENV MAIL_SERVER   mail.example.tld
 ENV MAIL_PORT     465
 ENV MAIL_USE_SSL  true
@@ -26,6 +27,6 @@ USER pgadmin:pgadmin
 
 CMD [ "python", "./usr/local/lib/python2.7/site-packages/pgadmin4/pgAdmin4.py" ]
 
-EXPOSE 5999
+EXPOSE $SERVER_PORT
 
 VOLUME /data/

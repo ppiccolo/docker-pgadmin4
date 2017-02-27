@@ -53,7 +53,7 @@ DEFAULT_SERVER = '0.0.0.0'
 
 # The default port on which the app server will listen if not set in the
 # environment by the runtime
-DEFAULT_SERVER_PORT = 5999
+DEFAULT_SERVER_PORT = int(os.environ['SERVER_PORT'])
 
 # Should HTML be minified on the fly when not in debug mode?
 MINIFY_HTML = True
